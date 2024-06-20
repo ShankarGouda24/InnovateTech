@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MySHOPE</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg" style="background-color: #FFB5DA;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MySHOPE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">
+                            <i class="bi bi-house-door"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            <i class="bi bi-info-circle"></i> About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productpage.html">
+                            <i class="bi bi-box-seam"></i> Product
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <i class="bi bi-envelope"></i> Contact
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">
+                            <i class="bi bi-box-arrow-in-right"></i> Registration/Login
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-cart"></i> Cart
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <br />
+    <div class="row">
+        <div class="col-md-6">
+            <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://m.media-amazon.com/images/I/41S6uEKBSOL._SX679_.jpg"
+                            class="d-block w-100" alt="Product Image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://m.media-amazon.com/images/I/41S6uEKBSOL._SX679_.jpg"
+                            class="d-block w-100" alt="Product Image">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#productCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h1>JioDive VR Headset</h1>
+            <p class="text-muted">Product Category</p>
+            <h2> ₹399</h2>
+            <p> <b>description</b></p>
+            <p>Enjoy live cricket like T20 Cricket World Cup & All Team India matches all year long with JioDive.
+            Access to the largest collection of 360° VR content & experiences. Watch 6,000+ movies, 1,000+ TV shows with JioCinema & 1,000+ Live TV channels with JioTV XR
+            Watch Live Cricket, movies, TV shows, and YouTube videos in 360° (for Android users only), 3D games & learning apps via JioImmerse. JioImmerse app is the gateway to 360° VR content
+            Can watch movies & TV shows comfortably while lying down or in a seated position
+            JioDive can be worn comfortably over spectacles
+            Accessible to all Indian phone numbers. Works with every network & WiFi
+            Supports 700+ smartphones with phone sizes up to 6.7 inches, supports Android 9+ and iOS 15+ with Gyroscope & Accelerometer sensors. Please check phone compatibility on the JioDive website
+            Adjust the side wheels to fix blurry picture quality and adjust the center wheel to fix double imaging. Please note the quality of content is dependent on the display resolution of your smartphone and the internet speed</p>
+            <button class="btn btn-primary">Add to Cart</button>
+            <button class="btn btn-secondary">Buy Now</button>
+        </div>
+    </div>
+    <div class="col">
+          <ul class="nav nav-tabs" id="productTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab" aria-controls="description" aria-selected="true">Description</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="specifications-tab" data-bs-toggle="tab" data-bs-target="#specifications" type="button" role="tab" aria-controls="specifications" aria-selected="false">Specifications</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab" aria-controls="reviews" aria-selected="false">Reviews</button>
+              </li>
+          </ul>
+          <div class="tab-content" id="productTabContent">
+              <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                  <p>Enjoy watching cricket all year long in 360° with JioDive. Don’t just watch the game, live it
+<br/>
+                  Also, get access to the largest collection of entertainment with JioTV XR over 1000+ Live TV channels in 15+ languages, or choose to binge on 6,000+ movies, 1,000+ shows, music, and much more
+                      <br/>
+                  And if you are tired of binge-watching, then you can surf the internet or stream your OTTs with JioSphere XR on a virtual screen with private viewing in VR
+                      <br/>
+                  What’s more, you can access your smartphone’s gallery and immerse yourself in viewing your personal pictures and videos on a virtual screen with JioPhotos XR on your JioDive (for Android users only)
+                      <br/>
+                  So why wait? Get your JioDive and install the JioImmerse app for immersive entertainment and 360° experiences in VR!</p>
+              </div>
+              <div class="tab-pane fade" id="specifications" role="tabpanel" aria-labelledby="specifications-tab">
+                  <p>Key Features
+                
+                  Live cricket all year long in 360° with JioCinema
+                  Watch Live cricket, 6000+ movies, 1000+ TV shows, and other live sports in a 360° view
+                  Largest collection of Live content with JioTV XR
+                  Enjoy 1000+ Live TV channels with JioTV XR in 15 different languages from anywhere, anytime
+                  Witness the magic of immersive YouTube 360° videos
+                  Experience thrilling adventures, virtual tours, and more in 360° immersive view
+                  For Android users only
+                  Comfortable private viewing while lying down or seated
+                  Binge-watch either lying down or seated to enjoy the ultimate viewing experience by changing the screen position
+</p>
+              </div>
+              <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                  <p><div class="wrapper">
+                    <div class="master">
+                      <h1>Review And rating</h1>
+                      <h2>How was your experience about our product?</h2>
+
+                      <div class="rating-component">
+                        <div class="status-msg">
+                          <label>
+                                          <input  class="rating_msg" type="hidden" name="rating_msg" value=""/>
+                                      </label>
+                        </div>
+                        <div class="stars-box">
+                          <i class="star fa fa-star" title="1 star" data-message="Poor" data-value="1"></i>
+                          <i class="star fa fa-star" title="2 stars" data-message="Too bad" data-value="2"></i>
+                          <i class="star fa fa-star" title="3 stars" data-message="Average quality" data-value="3"></i>
+                          <i class="star fa fa-star" title="4 stars" data-message="Nice" data-value="4"></i>
+                          <i class="star fa fa-star" title="5 stars" data-message="very good qality" data-value="5"></i>
+                        </div>
+                        <div class="starrate">
+                          <label>
+                                          <input  class="ratevalue" type="hidden" name="rate_value" value=""/>
+                                      </label>
+                        </div>
+                      </div>
+
+                      <div class="feedback-tags">
+                        <div class="tags-container" data-tag-set="1">
+                          <div class="question-tag">
+                            Why was your experience so bad?
+                          </div>
+                        </div>
+                        <div class="tags-container" data-tag-set="2">
+                          <div class="question-tag">
+                            Why was your experience so bad?
+                          </div>
+
+                        </div>
+
+                        <div class="tags-container" data-tag-set="3">
+                          <div class="question-tag">
+                            Why was your average rating experience ?
+                          </div>
+                        </div>
+                        <div class="tags-container" data-tag-set="4">
+                          <div class="question-tag">
+                            Why was your experience good?
+                          </div>
+                        </div>
+
+                        <div class="tags-container" data-tag-set="5">
+                          <div class="make-compliment">
+                            <div class="compliment-container">
+                              Give a compliment
+                              <i class="far fa-smile-wink"></i>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="tags-box">
+                          <input type="text" class="tag form-control" name="comment" id="inlineFormInputName" placeholder="please enter your review">
+                          <input type="hidden" name="product_id" value="{{ $products->id }}" />
+                        </div>
+
+                      </div>
+
+                      <div class="button-box">
+                        <input type="submit" class=" done btn btn-warning" disabled="disabled" value="Add review" />
+                      </div>
+
+                      <div class="submited-box">
+                        <div class="loader"></div>
+                        <div class="success-message">
+                          Thank you!
+                        </div>
+                      </div>
+                    </div>
+
+                  </div></p>
+              </div>
+          </div>
+      </div>
+<script>
+    $(".rating-component .star").on("mouseover", function () {
+      var onStar = parseInt($(this).data("value"), 10); //
+      $(this).parent().children("i.star").each(function (e) {
+        if (e < onStar) {
+          $(this).addClass("hover");
+        } else {
+          $(this).removeClass("hover");
+        }
+      });
+    }).on("mouseout", function () {
+      $(this).parent().children("i.star").each(function (e) {
+        $(this).removeClass("hover");
+      });
+    });
+
+    $(".rating-component .stars-box .star").on("click", function () {
+      var onStar = parseInt($(this).data("value"), 10);
+      var stars = $(this).parent().children("i.star");
+      var ratingMessage = $(this).data("message");
+
+      var msg = "";
+      if (onStar > 1) {
+        msg = onStar;
+      } else {
+        msg = onStar;
+      }
+      $('.rating-component .starrate .ratevalue').val(msg);
+
+
+
+      $(".fa-smile-wink").show();
+
+      $(".button-box .done").show();
+
+      if (onStar === 5) {
+        $(".button-box .done").removeAttr("disabled");
+      } else {
+        $(".button-box .done").attr("disabled", "true");
+      }
+
+      for (i = 0; i < stars.length; i++) {
+        $(stars[i]).removeClass("selected");
+      }
+
+      for (i = 0; i < onStar; i++) {
+        $(stars[i]).addClass("selected");
+      }
+
+      $(".status-msg .rating_msg").val(ratingMessage);
+      $(".status-msg").html(ratingMessage);
+      $("[data-tag-set]").hide();
+      $("[data-tag-set=" + onStar + "]").show();
+    });
+
+    $(".feedback-tags  ").on("click", function () {
+      var choosedTagsLength = $(this).parent("div.tags-box").find("input").length;
+      choosedTagsLength = choosedTagsLength + 1;
+
+      if ($(this).hasClass("choosed")) {
+        $(this).removeClass("choosed");
+        choosedTagsLength = choosedTagsLength - 2;
+      } else {
+        $(this).addClass("choosed");
+        $(".button-box .done").removeAttr("disabled");
+      }
+
+      console.log(choosedTagsLength);
+
+      if (choosedTagsLength <= 0) {
+        $(".button-box .done").attr("enabled", "false");
+      }
+    });
+
+
+
+    $(".compliment-container .fa-smile-wink").on("click", function () {
+      $(this).fadeOut("slow", function () {
+        $(".list-of-compliment").fadeIn();
+      });
+    });
+
+
+
+    $(".done").on("click", function () {
+      $(".rating-component").hide();
+      $(".feedback-tags").hide();
+      $(".button-box").hide();
+      $(".submited-box").show();
+      $(".submited-box .loader").show();
+
+      setTimeout(function () {
+        $(".submited-box .loader").hide();
+        $(".submited-box .success-message").show();
+      }, 1500);
+    });
+
+</script>
+
+      <footer class="bg-body-tertiary text-center text-lg-start">
+
+        <div class="text-center p-3" style="background-color: black; color:white;" >
+          © 2024 Copyright:
+         Sunstone
+        </div>
+
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
